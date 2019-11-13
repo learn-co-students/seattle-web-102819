@@ -1,0 +1,14 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+
+desc "Print Goodbye"
+task :goodbye do
+  p "Goodbye World!"
+end
+
+desc "This will start a console session"
+task :console do
+  # sh "bundle install"
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
+end
