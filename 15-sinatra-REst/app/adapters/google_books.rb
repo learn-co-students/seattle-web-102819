@@ -12,10 +12,11 @@ module Adapter
       books = JSON.parse(RestClient.get(author_url))
 
       books['items'].each do |item|
-        book = ::Book.new
+        book = ::GoogleBook.new
         book.author = author
         book.title = item['volumeInfo']['title']
         book.snippet = item['volumeInfo']['description']
+
         book.save
       end
     end
