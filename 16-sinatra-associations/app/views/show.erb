@@ -1,0 +1,9 @@
+
+<h1> <%= @google_book.title %> </h1>
+<h5> <%= @google_book.author%> </h5>
+<%= @google_book.snippet%>
+
+<form action="/google_books/<%= "#{@google_book.id}"%>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete Book">
+</form>

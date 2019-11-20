@@ -1,0 +1,13 @@
+<%= session[:message]%>
+<form action="/google_books" method="post">
+    <label for="title">
+        <input type="text" name="title" value="Please enter a title">
+    </label>
+    <label for="author">
+        <input type="text" name="author" value="Please enter a author">
+    </label>
+    <label for="snippet">
+        <input type="text" name="snippet" value="Please enter a snippet">
+    </label>
+    <input type="submit">
+</form>
