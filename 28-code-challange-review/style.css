@@ -1,0 +1,24 @@
+img{
+    height: 300px;
+    widows: 300px; 
+}
+body{
+    display: flex;
+    
+}
+body div{
+    padding:20px;
+    width: 100%;
+}
+
+.container-one{
+    border-style: solid;
+}
+
+.container-two h1{
+    text-align: right;
+}
+.container-two form{
+    display: flex;
+    flex-direction: column;
+}
